@@ -14,7 +14,7 @@
 class ruby::params {
 
  case $operatingsystem {
-    "centos": {
+    "centos", "scientific": {
       $ruby_dev="ruby-devel"
     }
     "ubuntu","debian": {
